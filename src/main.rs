@@ -72,5 +72,6 @@ fn setup(reset: bool) -> io::Result<()> {
 }
 
 #[cfg(target_os = "linux")]
-fn setup() -> io::Result<()> {
+fn setup(reset: bool) -> io::Result<()> {
+    OK(())
 }
